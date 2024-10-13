@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Clinic Hadi</title>
+</head>
+
+<body>
+    <h1>Pet Clinic Hadi</h1>
+    <hr>
+    <h3>Welcome to the clinic</h3>
+
+    <form action="login_0012.php" method="POST">
+        <table>
+            <tr>
+                <td>Username</td>
+                <td><input type="text" name="username_0012" id=""></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="password_0012" id="pass" required></td>
+                <td><button onclick="show()" type="button">Show</button></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="LOGIN" name="login" required>
+                    <input type="reset" value="RESET" name="reset" required>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+        function show() {
+            var x = document.getElementById("pass");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
+</body>
+
+</html>
