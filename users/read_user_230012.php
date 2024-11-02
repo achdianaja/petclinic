@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['login'])) {
-    echo "<script>alert('Please Login First !');window.location.replace('../auth/form_login_0012.php')</script>";
+    echo "<script>alert('Please Login First !');window.location.replace('../auth/form_login_230012.php')</script>";
 }
 
 if ($_SESSION['usertype'] != 'Manager') {
@@ -10,7 +10,7 @@ if ($_SESSION['usertype'] != 'Manager') {
 
 include '../koneksi.php';
 $i = 1;
-$data = mysqli_query($db_con, "SELECT * FROM users_0012")
+$data = mysqli_query($db_con, "SELECT * FROM users_230012")
 ?>
 
 <!DOCTYPE html>
@@ -28,7 +28,7 @@ $data = mysqli_query($db_con, "SELECT * FROM users_0012")
     <hr>
     <h3>User List</h3>
 
-    <p><a href="add_user_0012.php">Add New User</a></p>
+    <p><a href="add_user_230012.php">Add New User</a></p>
 
     <table border="1">
         <tr>
@@ -41,12 +41,12 @@ $data = mysqli_query($db_con, "SELECT * FROM users_0012")
         <?php foreach ($data as $item) : ?>
             <tr>
                 <td><?php echo $i++ ?></td>
-                <td><?php echo $item['username_0012'] ?></td>
-                <td><?php echo $item['user_type_0012'] ?></td>
-                <td><?= $item['fullname_0012'] ?></td>
-                <td><a href="edit_user_0012.php?id=<?= $item['user_id_0012'] ?>">Edit User</a></td>
-                <td><a href="delete_user_0012.php?id=<?= $item['user_id_0012'] ?>" onclick="return confirm('Are you sure Delete this User?')">Delete User</a></td>
-                <td><a href="reset_password_0012.php?id=<?= $item['user_id_0012'] ?>&type=<?= $item['user_type_0012'] ?>" onclick="return confirm('Are you sure reset the password?')">Reset Password</a></td>
+                <td><?php echo $item['username_230012'] ?></td>
+                <td><?php echo $item['user_type_230012'] ?></td>
+                <td><?= $item['fullname_230012'] ?></td>
+                <td><a href="edit_user_230012.php?id=<?= $item['user_id_230012'] ?>">Edit User</a></td>
+                <td><a href="delete_user_230012.php?id=<?= $item['user_id_230012'] ?>" onclick="return confirm('Are you sure Delete this User?')">Delete User</a></td>
+                <td><a href="../auth/reset_password_230012.php?id=<?= $item['user_id_230012'] ?>&type=<?= $item['user_type_230012'] ?>" onclick="return confirm('Are you sure reset the password?')">Reset Password</a></td>
 
             </tr>
         <?php endforeach ?>

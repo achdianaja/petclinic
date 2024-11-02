@@ -1,13 +1,13 @@
 <?php
 session_start();
 if (!isset($_SESSION['login'])) {
-    echo "<script>alert('Please Login First !');window.location.replace('../auth/form_login_0012.php')</script>";
+    echo "<script>alert('Please Login First !');window.location.replace('../auth/form_login_230012.php')</script>";
 }
 
 if (isset($_GET['id'])) {
     include '../koneksi.php';
 
-    $query = "DELETE FROM pets_0012 WHERE pet_id_0012 = '$_GET[id]'";
+    $query = "DELETE FROM pets_230012 WHERE pet_id_230012 = '$_GET[id]'";
 
     $update = mysqli_query($db_con, $query);
 
@@ -20,5 +20,5 @@ if (isset($_GET['id'])) {
 ?>
 
 <script>
-    window.location.replace("read_pet_0012.php")
+    window.location.replace("read_pet_230012.php")
 </script>

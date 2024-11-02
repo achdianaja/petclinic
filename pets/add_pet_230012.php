@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['login'])) {
-    echo "<script>alert('Please Login First !');window.location.replace('../auth/form_login_0012.php')</script>";
+    echo "<script>alert('Please Login First !');window.location.replace('../auth/form_login_230012.php')</script>";
 }
 ?>
 
@@ -19,16 +19,16 @@ if (!isset($_SESSION['login'])) {
     <hr>
     <h3>Form Add Pet</h3>
 
-    <form action="create_pet_0012.php" method="POST">
+    <form action="create_pet_230012.php" method="POST">
         <table>
             <tr>
                 <td>Name</td>
-                <td><input type="text" name="pet_name_0012" id="" required></td>
+                <td><input type="text" name="pet_name_230012" id="" required></td>
             </tr>
             <tr>
                 <td>Type</td>
                 <td>
-                    <select name="pet_type_0012" id="" required>
+                    <select name="pet_type_230012" id="" required>
                         <option value="Cat">Cat</option>
                         <option value="Dog">Dog</option>
                         <option value="Bird">Bird</option>
@@ -39,25 +39,25 @@ if (!isset($_SESSION['login'])) {
             <tr>
                 <td>Gender</td>
                 <td>
-                    <input type="radio" name="pet_gender_0012" value="Male" required> Male
-                    <input type="radio" name="pet_gender_0012" value="Female" required> Female
+                    <input type="radio" name="pet_gender_230012" value="Male" required> Male
+                    <input type="radio" name="pet_gender_230012" value="Female" required> Female
                 </td>
             </tr>
             <tr>
                 <td>Age</td>
-                <td><input type="number" name="pet_age_0012" id="" required></td>
+                <td><input type="number" name="pet_age_230012" id="" required></td>
             </tr>
             <tr>
                 <td>Owner</td>
-                <td><input type="text" name="pet_owner_0012" id="" required></td>
+                <td><input type="text" name="pet_owner_230012" id="" required></td>
             </tr>
             <tr>
                 <td>Address</td>
-                <td><textarea name="pet_address_0012" id="" required></textarea></td>
+                <td><textarea name="pet_address_230012" id="" required></textarea></td>
             </tr>
             <tr>
                 <td>Phone</td>
-                <td><input type="number" name="pet_phone_0012" id="" required></td>
+                <td><input type="number" name="pet_phone_230012" id="" required></td>
             </tr>
             <tr>
                 <td></td>
@@ -68,7 +68,7 @@ if (!isset($_SESSION['login'])) {
             </tr>
         </table>
     </form>
-    <p><a href="read_pet_0012.php">CANCEL</a></p>
+    <p><a href="read_pet_230012.php">CANCEL</a></p>
 </body>
 
 </html>

@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['login'])) {
-    echo "<script>alert('Please Login First !');window.location.replace('../auth/form_login_0012.php')</script>";
+    echo "<script>alert('Please Login First !');window.location.replace('../auth/form_login_230012.php')</script>";
 }
 ?>
 
@@ -19,22 +19,22 @@ if (!isset($_SESSION['login'])) {
     <hr>
     <h3>Form Add User</h3>
 
-    <form action="create_user_0012.php" method="POST">
+    <form action="create_user_230012.php" method="POST">
         <table>
             <tr>
                 <td>Username</td>
-                <td><input type="text" name="username_0012" id="" required></td>
+                <td><input type="text" name="username_230012" id="" required></td>
             </tr>
             <tr>
                 <td>User Type</td>
                 <td>
-                    <input type="radio" name="user_type_0012" value="Staff" required> Staff
-                    <input type="radio" name="user_type_0012" value="Manager" required> Manager
+                    <input type="radio" name="user_type_230012" value="Staff" required> Staff
+                    <input type="radio" name="user_type_230012" value="Manager" required> Manager
                 </td>
             </tr>
             <tr>
                 <td>Full Name</td>
-                <td><input type="text" name="fullname_0012" id="" required></td>
+                <td><input type="text" name="fullname_230012" id="" required></td>
             </tr>
             <tr>
                 <td></td>
@@ -45,7 +45,7 @@ if (!isset($_SESSION['login'])) {
             </tr>
         </table>
     </form>
-    <p><a href="read_user_0012.php">CANCEL</a></p>
+    <p><a href="read_user_230012.php">CANCEL</a></p>
 </body>
 
 </html>

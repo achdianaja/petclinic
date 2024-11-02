@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['login'])) {
-    echo "<script>alert('Please Login First !');window.location.replace('../auth/form_login_0012.php')</script>";
+    echo "<script>alert('Please Login First !');window.location.replace('../auth/form_login_230012.php')</script>";
 }
 
 if ($_SESSION['usertype'] != 'Manager') {
@@ -11,7 +11,7 @@ if ($_SESSION['usertype'] != 'Manager') {
 if (isset($_GET['id'])) {
     include '../koneksi.php';
 
-    $query = "DELETE FROM users_0012 WHERE user_id_0012 = '$_GET[id]'";
+    $query = "DELETE FROM users_230012 WHERE user_id_230012 = '$_GET[id]'";
 
     $update = mysqli_query($db_con, $query);
 
@@ -24,5 +24,5 @@ if (isset($_GET['id'])) {
 ?>
 
 <script>
-    window.location.replace("read_user_0012.php")
+    window.location.replace("read_user_230012.php")
 </script>

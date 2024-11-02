@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['login'])) {
-    echo "<script>alert('Please Login First !');window.location.replace('../auth/form_login_0012.php')</script>";
+    echo "<script>alert('Please Login First !');window.location.replace('../auth/form_login_230012.php')</script>";
 }
 
 if ($_SESSION['usertype'] != 'Manager') {
@@ -11,11 +11,11 @@ if ($_SESSION['usertype'] != 'Manager') {
 if (isset($_POST['save'])) {
     include '../koneksi.php';
 
-    $query = "UPDATE `users_0012` SET 
-        username_0012 = '$_POST[username_0012]',
-        user_type_0012 = '$_POST[user_type_0012]',
-        fullname_0012 = '$_POST[fullname_0012]'
-        WHERE user_id_0012 = '$_POST[user_id_0012]'";
+    $query = "UPDATE `users_230012` SET 
+        username_230012 = '$_POST[username_230012]',
+        user_type_230012 = '$_POST[user_type_230012]',
+        fullname_230012 = '$_POST[fullname_230012]'
+        WHERE user_id_230012 = '$_POST[user_id_230012]'";
 
     $update = mysqli_query($db_con, $query);
 
@@ -28,5 +28,5 @@ if (isset($_POST['save'])) {
 ?>
 
 <script>
-    window.location.replace("read_user_0012.php")
+    window.location.replace("read_user_230012.php")
 </script>

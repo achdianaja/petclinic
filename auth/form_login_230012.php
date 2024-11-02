@@ -12,16 +12,16 @@
     <hr>
     <h3>Welcome to the clinic</h3>
 
-    <form action="login_0012.php" method="POST">
+    <form action="login_230012.php" method="POST">
         <table>
             <tr>
                 <td>Username</td>
-                <td><input type="text" name="username_0012" id=""></td>
+                <td><input type="text" name="username_230012" id=""></td>
             </tr>
             <tr>
                 <td>Password</td>
-                <td><input type="password" name="password_0012" id="pass" required></td>
-                <td><button onclick="show()" type="button">Show</button></td>
+                <td><input type="password" name="password_230012" id="pass" required></td>
+                <td><button      type="button">Show</button></td>
             </tr>
             <tr>
                 <td></td>

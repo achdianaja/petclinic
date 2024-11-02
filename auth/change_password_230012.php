@@ -12,11 +12,11 @@
     <hr>
     <h3>Change Password</h3>
 
-    <form action="update_password_0012.php" method="POST">
+    <form action="update_password_230012.php" method="POST">
         <table>
             <tr>
                 <td>New Password : </td>
-                <td><input type="password" name="new_password_0012" id="pass" required></td>
+                <td><input type="password" name="new_password_230012" id="pass" required></td>
                 <td><button onclick="show()" type="button">Show</button></td>
             </tr>
             <tr>
