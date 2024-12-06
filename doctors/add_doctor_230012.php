@@ -1,8 +1,8 @@
 <?php
-session_start();
-if (!isset($_SESSION['login'])) {
-    echo "<script>alert('Please Login First !');window.location.replace('../auth/form_login_230012.php')</script>";
-}
+// session_start();
+// if (!isset($_SESSION['login'])) {
+//     echo "<script>alert('Please Login First !');window.location.replace('../auth/form_login_230012.php')</script>";
+// }
 ?>
 
 <!DOCTYPE html>
@@ -11,11 +11,11 @@ if (!isset($_SESSION['login'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pet CLinic Hadi</title>
+    <title>Pet CLinic iKi</title>
 </head>
 
 <body>
-    <h1>Pet Clinic Hadi</h1>
+    <h1>Pet Clinic iKi</h1>
     <hr>
     <h3>Form Add Doctor</h3>
 

@@ -1,9 +1,9 @@
-<?php
-session_start();
-if (!isset($_SESSION['login'])) {
-    echo "<script>alert('Please Login First !');window.location.replace('../auth/form_login_230012.php')</script>";
-}
-?>
+<!-- <?php
+        session_start();
+        if (!isset($_SESSION['login'])) {
+            echo "<script>alert('Please Login First !');window.location.replace('../auth/form_login_230012.php')</script>";
+        }
+        ?> -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,11 +11,11 @@ if (!isset($_SESSION['login'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pet CLinic Hadi</title>
+    <title>Pet CLinic iKi</title>
 </head>
 
 <body>
-    <h1>Pet Clinic Hadi</h1>
+    <h1>Pet Clinic iKi</h1>
     <hr>
     <h3>Form Add Pet</h3>
 
@@ -29,10 +29,11 @@ if (!isset($_SESSION['login'])) {
                 <td>Type</td>
                 <td>
                     <select name="pet_type_230012" id="" required>
+                        <option value="" selected disabled>Choose</option>
                         <option value="Cat">Cat</option>
                         <option value="Dog">Dog</option>
                         <option value="Bird">Bird</option>
-                        <option value="Kontol">Kontol</option>
+                        <option value="Kontol">Reptile</option>
                     </select>
                 </td>
             </tr>

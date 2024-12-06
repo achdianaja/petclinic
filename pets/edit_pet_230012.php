@@ -1,8 +1,8 @@
 <?php
-session_start();
-if (!isset($_SESSION['login'])) {
-    echo "<script>alert('Please Login First !');window.location.replace('../auth/form_login_230012.php')</script>";
-}
+// session_start();
+// if (!isset($_SESSION['login'])) {
+//     echo "<script>alert('Please Login First !');window.location.replace('../auth/form_login_230012.php')</script>";
+// }
 
 include '../koneksi.php';
 
@@ -19,11 +19,11 @@ $data = mysqli_fetch_assoc($pet);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pet CLinic Hadi</title>
+    <title>Pet CLinic iKi</title>
 </head>
 
 <body>
-    <h1>Pet Clinic Hadi</h1>
+    <h1>Pet Clinic iKi</h1>
     <hr>
     <h3>Form Edit Pet</h3>
 
@@ -41,7 +41,7 @@ $data = mysqli_fetch_assoc($pet);
                         <option value="Cat" <?php echo ($data['pet_type_230012'] == 'Cat') ? 'selected' : ''  ?>>Cat</option>
                         <option value="Dog" <?php echo ($data['pet_type_230012'] == 'Dog') ? 'selected' : ''  ?>>Dog</option>
                         <option value="Bird" <?php echo ($data['pet_type_230012'] == 'Bird') ? 'selected' : ''  ?>>Bird</option>
-                        <option value="Kontol" <?php echo ($data['pet_type_230012'] == 'Kontol') ? 'selected' : ''  ?>>Kontol</option>
+                        <option value="Kontol" <?php echo ($data['pet_type_230012'] == 'Reptile') ? 'selected' : ''  ?>>Reptile</option>
                     </select>
                 </td>
             </tr>

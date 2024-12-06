@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <h1>Pet Clinic Hadi</h1>
+    <h1>Pet Clinic iKi</h1>
     <hr>
     <h3>Pet List</h3>
 </body>

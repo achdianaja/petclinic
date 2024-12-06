@@ -19,11 +19,11 @@ $medicals = mysqli_query($db_con, $querymed);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pet Clinic Hadi</title>
+    <title>Pet Clinic iKi</title>
 </head>
 
 <body>
-    <h1>Pet Clinic Hadi</h1>
+    <h1>Pet Clinic iKi</h1>
     <hr>
     <h3>Medical Records</h3>
 

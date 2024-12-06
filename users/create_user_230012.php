@@ -1,8 +1,8 @@
 <?php
-session_start();
-if (!isset($_SESSION['login'])) {
-    echo "<script>alert('Please Login First !');window.location.replace('../auth/form_login_0012.php')</script>";
-}
+// session_start();
+// if (!isset($_SESSION['login'])) {
+//     echo "<script>alert('Please Login First !');window.location.replace('../auth/form_login_230012.php')</script>";
+// }
 
 if ($_SESSION['usertype'] != 'Manager') {
     echo "<script>alert('Access Forbidden !');window.location.replace('../index.php')</script>";
@@ -11,10 +11,10 @@ if ($_SESSION['usertype'] != 'Manager') {
 if (isset($_POST['save'])) {
     include '../koneksi.php';
 
-    $password = password_hash($_POST['user_type_0012'], PASSWORD_DEFAULT);
+    $password = password_hash($_POST['user_type_230012'], PASSWORD_DEFAULT);
 
-    $query = "INSERT INTO `users_0012` (username_0012, password_0012, user_type_0012, fullname_0012) 
-                  VALUES ('$_POST[username_0012]', '$password', '$_POST[user_type_0012]', '$_POST[fullname_0012]') ";
+    $query = "INSERT INTO `users_230012` (username_230012, password_230012, user_type_230012, fullname_230012) 
+                  VALUES ('$_POST[username_230012]', '$password', '$_POST[user_type_230012]', '$_POST[fullname_230012]') ";
 
     $create = mysqli_query($db_con, $query);
 
@@ -27,5 +27,5 @@ if (isset($_POST['save'])) {
 ?>
 
 <script>
-    window.location.replace("read_user_0012.php")
+    window.location.replace("read_user_230012.php")
 </script>
