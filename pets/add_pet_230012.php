@@ -1,9 +1,9 @@
-<!-- <?php
-        session_start();
-        if (!isset($_SESSION['login'])) {
-            echo "<script>alert('Please Login First !');window.location.replace('../auth/form_login_230012.php')</script>";
-        }
-        ?> -->
+<?php
+    session_start();
+    if (!isset($_SESSION['login'])) {
+        echo "<script>alert('Please Login First !');window.location.replace('../auth/form_login_230012.php')</script>";
+    }
+?>
 
 <!DOCTYPE html>
 <html lang="en">

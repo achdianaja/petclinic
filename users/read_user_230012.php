@@ -1,12 +1,12 @@
 <?php
-// session_start();
-// if (!isset($_SESSION['login'])) {
-//     echo "<script>alert('Please Login First !');window.location.replace('../auth/form_login_230012.php')</script>";
-// }
+session_start();
+if (!isset($_SESSION['login'])) {
+    echo "<script>alert('Please Login First !');window.location.replace('../auth/form_login_230012.php')</script>";
+}
 
-// if ($_SESSION['usertype'] != 'Manager') {
-//     echo "<script>alert('Access Forbidden !');window.location.replace('../index.php')</script>";
-// }
+if ($_SESSION['usertype'] != 'Manager') {
+    echo "<script>alert('Access Forbidden !');window.location.replace('../index.php')</script>";
+}
 
 include '../koneksi.php';
 $i = 1;
