@@ -9,9 +9,9 @@ if (isset($_GET['id'])) {
 
     $query = "DELETE FROM pets_230012 WHERE pet_id_230012 = '$_GET[id]'";
 
-    $update = mysqli_query($db_con, $query);
+    $delete = mysqli_query($db_con, $query);
 
-    if ($update) {
+    if ($delete) {
         echo "<script>alert('Pet Deleted Successfully !')</script>";
     } else {
         echo "<script>alert('Pet Delete Failed !')</script>";

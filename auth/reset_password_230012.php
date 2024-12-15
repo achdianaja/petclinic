@@ -17,4 +17,4 @@ if(isset($_GET['id'])){
     }
 }
 ?>
-<script>window.location.replace("read_user_230012.php")</script>
+<script>window.location.replace("../users/read_user_230012.php")</script>

@@ -53,6 +53,7 @@ $data = mysqli_fetch_assoc($user);
                 <td>Full Name</td>
                 <td><input type="text" name="fullname_230012" id="" required value="<?= $data['fullname_230012'] ?>"></td>
             </tr>
+            
             <tr>
                 <td></td>
                 <td>

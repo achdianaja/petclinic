@@ -7,8 +7,8 @@ if (!isset($_SESSION['login'])) {
 if (isset($_POST['save'])) {
     include '../koneksi.php';
 
-    $query = "INSERT INTO `doctors_230012` (doctor_name_230012, doctor_gender_230012, doctor_address_230012, doctor_phone_230012) 
-                  VALUES ('$_POST[doctor_name_230012]', '$_POST[doctor_gender_230012]', '$_POST[doctor_address_230012]', '$_POST[doctor_phone_230012]') ";
+    $query = "INSERT INTO `doctors_230012` (doctor_name_230012, doctor_gender_230012, doctor_address_230012, doctor_phone_230012, doctor_photo_230012) 
+                  VALUES ('$_POST[doctor_name_230012]', '$_POST[doctor_gender_230012]', '$_POST[doctor_address_230012]', '$_POST[doctor_phone_230012]', '$_POST[doctor_photo_230012]') ";
 
     $create = mysqli_query($db_con, $query);
 

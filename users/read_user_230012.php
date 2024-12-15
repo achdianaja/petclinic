@@ -36,6 +36,7 @@ $data = mysqli_query($db_con, "SELECT * FROM users_230012")
             <th>Username</th>
             <th>User Type</th>
             <th>Full Name</th>
+            <th>Photo</th>
             <th colspan="3">Action</th>
         </tr>
         <?php foreach ($data as $item) : ?>
@@ -44,10 +45,10 @@ $data = mysqli_query($db_con, "SELECT * FROM users_230012")
                 <td><?php echo $item['username_230012'] ?></td>
                 <td><?php echo $item['user_type_230012'] ?></td>
                 <td><?= $item['fullname_230012'] ?></td>
+                <td><img src="../public/images/users/<?php echo $item['user_photo_230012'] ?>" alt="" width="50" height="auto" style="border-radius: 100%;"></td>
                 <td><a href="edit_user_230012.php?id=<?= $item['user_id_230012'] ?>">Edit User</a></td>
                 <td><a href="delete_user_230012.php?id=<?= $item['user_id_230012'] ?>" onclick="return confirm('Are you sure Delete this User?')">Delete User</a></td>
                 <td><a href="../auth/reset_password_230012.php?id=<?= $item['user_id_230012'] ?>&type=<?= $item['user_type_230012'] ?>" onclick="return confirm('Are you sure reset the password?')">Reset Password</a></td>
-
             </tr>
         <?php endforeach ?>
     </table>

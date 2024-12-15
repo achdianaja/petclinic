@@ -33,6 +33,7 @@ $data = mysqli_query($db_con, "SELECT * FROM doctors_230012")
             <th>Gender</th>
             <th>Address</th>
             <th>Phone</th>
+            <th>Photo</th>
             <th colspan="2">Action</th>
         </tr>
         <?php foreach ($data as $item) : ?>
@@ -42,6 +43,7 @@ $data = mysqli_query($db_con, "SELECT * FROM doctors_230012")
                 <td><?php echo $item['doctor_gender_230012'] ?></td>
                 <td><?= $item['doctor_address_230012'] ?></td>
                 <td><?= $item['doctor_phone_230012'] ?></td>
+                <td><img src="../public/images/doctors/<?= $item['doctor_photo_230012'] ?>" alt="" width="50" height="auto" style="border-radius: 100%;"></td>
                 <td><a href="edit_doctor_230012.php?id=<?= $item['doctor_id_230012'] ?>">Edit Doctor</a></td>
                 <td><a href="delete_doctor_230012.php?id=<?= $item['doctor_id_230012'] ?>" onclick="return confirm('Are you sure Delete this Doctor?')">Delete Doctor</a></td>
 

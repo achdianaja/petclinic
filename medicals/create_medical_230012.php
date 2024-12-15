@@ -6,7 +6,7 @@
         pet_id_230012 = '$_POST[pet_id_230012]',
         doctor_id_230012 = '$_POST[doctor_id_230012]',
         symptom_230012 = '$_POST[symptom_230012]',
-        diagnose_230012 = '$_POST[diagnose_012]',
+        diagnose_230012 = '$_POST[diagnose_230012]',
         treatment_230012 = '$_POST[treatment_230012]',
         cost_230012 = '$_POST[cost_230012]'";
     

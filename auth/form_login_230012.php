@@ -21,7 +21,7 @@
             <tr>
                 <td>Password</td>
                 <td><input type="password" name="password_230012" id="pass" required></td>
-                <td><button      type="button">Show</button></td>
+                <td><button type="button" onclick="show()">Show</button></td>
             </tr>
             <tr>
                 <td></td>

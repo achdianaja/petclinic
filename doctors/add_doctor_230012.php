@@ -41,6 +41,10 @@ if (!isset($_SESSION['login'])) {
                 <td><input type="number" name="doctor_phone_230012" id="" required></td>
             </tr>
             <tr>
+                <td>Photo</td>
+                <td><input type="file" name="doctor_photo_230012" id="" required></td>
+            </tr>
+            <tr>
                 <td></td>
                 <td>
                     <input type="submit" value="SAVE" name="save" required>

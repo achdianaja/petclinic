@@ -29,7 +29,7 @@ $data = mysqli_query($db_con, "SELECT * FROM pets_230012")
         <tr>
             <th>No</th>
             <th>Name</th>
-            <!-- <th>Photo</th> -->
+            <th>Photo</th>
             <th>Type</th>
             <th>Gender</th>
             <th>Age (month) </th>
@@ -42,10 +42,10 @@ $data = mysqli_query($db_con, "SELECT * FROM pets_230012")
             <tr>
                 <td><?php echo $i++ ?></td>
                 <td><a href="../medicals/medicals_230012.php?pet_id=<?php echo $item['pet_id_230012'] ?>"><?php echo $item['pet_name_230012'] ?></a></td>
-                    <!-- <td align="center">
-                        <img src="../public/images/pets/<?php echo $item['pet_photo_230012'] ?>" alt="" width="50" height="auto"><br>
+                    <td align="center">
+                        <img src="../public/images/pets/<?php echo $item['pet_photo_230012'] ?>" alt="" width="50" height="auto" style="border-radius: 100%;"><br>
                         <a href="pet_photo_230012.php?id=<?php echo $item['pet_id_230012'] ?>">Change Photo</a>
-                    </td> -->
+                    </td>
                 <td><?php echo $item['pet_type_230012'] ?></td>
                 <td><?php echo $item['pet_gender_230012'] ?></td>
                 <td><?php echo $item['pet_age_230012'] ?></td>

@@ -27,7 +27,7 @@ $data = mysqli_fetch_assoc($doctor);
     <hr>
     <h3>Form Edit doctor</h3>
 
-    <form action="update_doctor_230012.php" method="POST">
+    <form action="update_doctor_230012.php" method="POST" enctype="multipart/form-data">
         <table>
             <tr>
                 <td>Name</td>
@@ -51,9 +51,18 @@ $data = mysqli_fetch_assoc($doctor);
             </tr>
             <tr>
                 <td></td>
+                <td><img src="../public/images/doctors/<?= $data['doctor_photo_230012'] ?>" alt="" width="100" height="auto"></td>
+            </tr>
+            <tr>
+                <td>New Photo</td>
+                <td>: <input type="file" name="new_photo_230012" ></td>
+            </tr>
+            <tr>
+                <td></td>
                 <td>
                     <input type="submit" value="SAVE" name="save" required>
-                    <input type="reset" value="Reset" required>
+                    <input type="reset" value="RESET" required>
+                    <input type="hidden" name="doctor_photo_230012" value="<?= $data['doctor_photo_230012'] ?>">
                 </td>
             </tr>
         </table>
